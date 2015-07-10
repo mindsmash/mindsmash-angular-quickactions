@@ -1,0 +1,11 @@
+<div class="modal-header">
+	<h4 class="modal-title">{{item.title}}</h4>
+	<button type="button" class="modal-close" data-ng-click="$dismiss()">×</button>
+</div>
+<div class="modal-body">
+	<input type="text" class="form-control" ng-model="actionFilter.name" autofocus="autofocus" ng-keydown="keydown($event)">
+	<br>
+	<div class="list-group">
+		<a class="list-group-item" ng-class="{active: active == $index}" ng-repeat="action in filteredActions = (item.actions | filter: actionFilter | limitTo: 5) " ng-click="launch(action)">{{action.name}}</a>
+	</div>
+</div>
