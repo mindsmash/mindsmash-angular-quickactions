@@ -54,7 +54,9 @@ You may specify a custom template during configuration by injecting the *quickac
 ### API
 
 #### quickactions.registerGlobal(key, item)
+
 `key`: The key that the user can press to open the global actions modal
+
 `item`: An object with the following parameters:
 - `title`: Title of the modal
 - `actions`: Array containing actions as objects with the following parameters:
