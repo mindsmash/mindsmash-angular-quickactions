@@ -1,6 +1,6 @@
 {
     "name": "mindsmash-angular-quickactions",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "authors": ["mindsmash GmbH"],
     "description": "Library for AngularJS for showing quick access options/actions in a modal.",
     "main": "dist/mindsmash-angular-quickactions.min.js",
