@@ -1,7 +1,7 @@
 angular.module('mindsmash.quickactions').run(['$templateCache', function($templateCache) {
   'use strict';
 
-  $templateCache.put('src/mindsmash-angular-quickactions-modal.html',
+  $templateCache.put('mindsmash-angular-quickactions-modal.html',
     "<div class=\"modal-header\">\n" +
     "\t<h4 class=\"modal-title\">{{item.title}}</h4>\n" +
     "\t<button type=\"button\" class=\"modal-close\" data-ng-click=\"$dismiss()\">×</button>\n" +

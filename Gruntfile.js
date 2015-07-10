@@ -34,10 +34,11 @@ module.exports = function (grunt) {
         },
         ngtemplates: {
             options: {
-                module: 'mindsmash.quickactions'
+                module: 'mindsmash.quickactions',
             },
             build: {
-                src: 'src/*.html',
+                cwd: 'src',
+                src: '*.html',
                 dest: 'dist/mindsmash-angular-quickactions.tpls.js'
             }
         },
