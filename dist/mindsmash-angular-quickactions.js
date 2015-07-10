@@ -7,7 +7,7 @@
 
         this.templateUrl = 'mindsmash-angular-quickactions-modal.html';
 
-        this.$get = function (hotkeys, $modal, $timeout) {
+        this.$get = ['hotkeys', '$modal', '$timeout', function (hotkeys, $modal, $timeout) {
             var _global = this.global,
                 _templateUrl = this.templateUrl,
                 _modalOpen = false;
@@ -29,7 +29,7 @@
                             return item;
                         }
                     },
-                    controller: function ($scope, $modalInstance, hotkeys, item) {
+                    controller: ['$scope', '$modalInstance', 'hotkeys', 'item', function ($scope, $modalInstance, hotkeys, item) {
                         $scope.item = item;
                         $scope.active = 0;
 
@@ -72,7 +72,7 @@
                                 name: ''
                             };
                         });
-                    }
+                    }]
                 }).result.then(function () {
                     _modalOpen = false;
                 }, function () {
@@ -120,7 +120,7 @@
                 registerGlobal: _registerGlobal,
                 register: _register
             };
-        };
+        }];
 
     });
 })();

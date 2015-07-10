@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             build: {
                 expand: true,
                 cwd: 'src',
-                src: ['src/*.js'],
+                src: ['*.js'],
                 dest: 'dist'
             }
         },
@@ -42,14 +42,6 @@ module.exports = function (grunt) {
                 dest: 'dist/mindsmash-angular-quickactions.tpls.js'
             }
         },
-        copy: {
-            main: {
-                cwd: 'src/',
-                expand: true,
-                src: '*.js',
-                dest: 'dist/'
-            },
-        },
         // Task configuration.
         uglify: {
             options: {
@@ -64,11 +56,10 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-html2js');
 
-    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'html2js', 'copy', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'html2js', 'uglify']);
     grunt.registerTask('build', ['default']);
 };
