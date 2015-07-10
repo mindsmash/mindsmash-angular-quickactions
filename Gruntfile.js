@@ -32,10 +32,9 @@ module.exports = function (grunt) {
                 src: ['src/*.js']
             }
         },
-        html2js: {
+        ngtemplates: {
             options: {
-                module: 'mindsmash.quickactions',
-                singleModule: true
+                module: 'mindsmash.quickactions'
             },
             build: {
                 src: 'src/*.html',
@@ -58,8 +57,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-ng-annotate');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-html2js');
+    grunt.loadNpmTasks('grunt-angular-templates');
 
-    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'html2js', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'ngAnnotate', 'ngtemplates', 'uglify']);
     grunt.registerTask('build', ['default']);
 };
