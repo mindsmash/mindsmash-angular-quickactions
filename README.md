@@ -60,8 +60,8 @@ You may specify a custom template during configuration by injecting the *quickac
 `item`: An object with the following parameters:
 - `title`: Title of the modal
 - `actions`: Array containing actions as objects with the following parameters:
--- `name`: Display name of the action
--- `callback`: Callback function to be executed when user opens the actions
+--- `name`: Display name of the action
+--- `callback`: Callback function to be executed when user opens the actions
 
 #### quickactions.register(scope, key, item)
 `scope`: Scope in which this is valid
