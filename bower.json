@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "authors": ["mindsmash GmbH"],
     "description": "Library for AngularJS for showing quick access options/actions in a modal.",
-    "main": "dist/mindsmash-angular-quickactions.js",
+    "main": "dist/mindsmash-angular-quickactions.min.js",
     "keywords": ["shortcut", "hotkeys", "actions", "dropdown"],
     "ignore": ["**/.*", "node_modules", "components"],
     "license": "MIT",
