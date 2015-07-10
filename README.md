@@ -74,3 +74,8 @@ You may specify a custom template during configuration by injecting the *quickac
 - `actions`: Array containing actions as objects with the following parameters:
  - `name`: Display name of the action
  - `callback`: Callback function to be executed when user opens the actions
+
+## Contributors
+
+   * Daniel Busch, mindsmash GmbH
+   * Jan Marquardt, mindsmash GmbH

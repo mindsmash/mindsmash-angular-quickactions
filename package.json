@@ -1,31 +1,26 @@
 {
-  "name": "mindsmash-angular-quickactions",
-  "author": "mindsmash GmbH",
-  "version": "1.0.0",
-  "license": "MIT",
-  "description": "Library for AngularJS for showing quick access options/actions in a modal.",
-  "homepage": "https://github.com/mindsmash/mindsmash-angular-quickactions",
-  "main": "dist/mindsmash-angular-quickactions.js",
-  "keywords": [
-    "angular",
-    "angularjs",
-    "keyboard",
-    "shortcut",
-    "hotkeys",
-    "actions",
-    "dropdown"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mindsmash/mindsmash-angular-quickactions.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mindsmash/mindsmash-angular-quickactions/issues"
-  },
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-ng-annotate": "1.0.0"
-  }
+    "name": "mindsmash-angular-quickactions",
+    "author": "mindsmash GmbH",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Library for AngularJS for showing quick access options/actions in a modal.",
+    "homepage": "https://github.com/mindsmash/mindsmash-angular-quickactions",
+    "main": "dist/mindsmash-angular-quickactions.js",
+    "keywords": ["angular", "angularjs", "keyboard", "shortcut", "hotkeys", "actions", "dropdown"],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/mindsmash/mindsmash-angular-quickactions.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mindsmash/mindsmash-angular-quickactions/issues"
+    },
+    "devDependencies": {
+        "grunt": "^0.4.5",
+        "grunt-cli": "^0.1.13",
+        "grunt-contrib-copy": "^0.8.0",
+        "grunt-contrib-jshint": "^0.11.2",
+        "grunt-contrib-uglify": "^0.9.1",
+        "grunt-html2js": "^0.3.2",
+        "grunt-ng-annotate": "1.0.0"
+    }
 }
