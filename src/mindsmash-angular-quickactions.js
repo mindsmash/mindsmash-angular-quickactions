@@ -88,8 +88,9 @@
             var _registerGlobal = function (hotkey, item) {
                 _global = {
                     combo: hotkey,
+                    description: item.title,
                     callback: angular.bind(this, function () {
-                        _launchModal(item);
+                        _launchModal(item, item.title);
                     })
                 };
                 hotkeys.add(_global);
@@ -103,6 +104,7 @@
             var _register = function ($scope, hotkey, item) {
                 hotkeys.add({
                     combo: hotkey,
+                    description: item.title,
                     callback: angular.bind(this, function () {
                         _launchModal(item);
                     })
